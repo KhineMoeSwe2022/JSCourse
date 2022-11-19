@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        const input1 = prompt("First Number");
+        const input = prompt("+ - * /");
+        const input2 = prompt("Second Number");
+        if(input == '+'){
+            const sum = Number(input1) + Number(input2);
+            alert(sum);
+        }
+        else if(input == '-'){
+            const sub = Number(input1) - Number(input2);
+            alert(sub);
+        }
+        else if(input == '*'){
+            const mult = Number(input1) * Number(input2);
+            alert(mult);
+        }
+        else if(input == '/'){
+            const divid = Number(input1) / Number(input2);
+            alert(divid);
+        }
+        
+    </script>
+</body>
+</html>
