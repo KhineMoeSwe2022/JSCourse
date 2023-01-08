@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Lesson</title>
+</head>
+<body>
+    <script>
+        const users = [
+            {
+                username: "kms",
+                password: "kms123",
+            },
+            {
+                username: "kk1",
+                password: "kk123",
+            },
+            {
+                username: "mm1",
+                password: "mm123",
+            },
+            {
+                username: "ss1",
+                password: "ss123",
+            }
+        ]
+        const un = prompt("Username");
+        const pwd = prompt("Password");
+        var temp=0;
+        for(var i=0; i < users.length; i++){
+            if(un == users[i].username && pwd == users[i].password){
+            temp = 1;break;
+            // return true;
+            }
+            else{
+             temp = 0;
+            }
+        }
+        if(temp == 1){
+            alert("Welcome back, " + un);
+        }
+        else{
+            alert("Your information is incorrect");
+        }
+    </script>
+</body>
+</html>
